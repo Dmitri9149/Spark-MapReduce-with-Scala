@@ -145,3 +145,9 @@ tags
 # Persistent undo
 [._]*.un~
 #######################################
+
+### ignore Alice.txt
+Alice.txt
+
+################
+
