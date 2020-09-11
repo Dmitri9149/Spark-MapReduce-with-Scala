@@ -4,7 +4,7 @@ import org.apache.spark.sql.SparkSession
 
 object InScala {
 
-    def main(args: Array[String] {
+    def main(args: Array[String]) {
       
         val logFile = " ../../trial_0/Alice.txt"
         val spark = SparkSession.builder.appName("InScala").getOrCreate()
