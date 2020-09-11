@@ -16,8 +16,13 @@ object InScala {
         val logData = spark.read.textFile(logFile).cache()
         val numAlice = logData.filter(line => line.contains("Alice")).count()
         val numRabbit = logData.filter(line => line.contains("Rabbit")).count()
-        println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-        println(s"Lines with Alice: $numAlice, Lines with Rabbit: $numRabbit")
+
+        println("*****************************************************************\n")
+
+        println(s"Lines with Alice: $numAlice, Lines with Rabbit: $numRabbit\n")
+
+        println("*****************************************************************\n")
+
         spark.stop()
 
 
